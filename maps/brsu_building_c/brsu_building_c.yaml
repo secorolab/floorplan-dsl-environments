@@ -3,7 +3,7 @@ image: brsu_building_c.pgm
 negate: 0
 occupied_thresh: 0.65
 origin:
-- 0
-- 0
+- -20
+- -22
 - 0
 resolution: 0.05
