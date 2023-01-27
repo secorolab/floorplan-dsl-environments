@@ -1,0 +1,8 @@
+task:
+  name: classroom_c022
+  type: waypoint_following
+  waypoints:
+  - [45.56, 35.77, 0]
+  - [40.32, 39.44, 0]
+  - [43.99, 44.68, 0]
+  - [49.23, 41.01, 0]
