@@ -1,0 +1,22 @@
+<launch>
+  <arg name="gui" default="true"/>
+
+    <include file="$(find floorplan-dsl-environments)/launch/brsu_building_c.launch">
+        <arg name="gui" default="$(arg gui)"/>
+    </include>
+
+    <include file="$(find robile_gazebo)/launch/4_wheel_platform.launch">
+        <arg name="use_kelo_tulip" value="false"/>
+    </include>
+
+    <include file="$(find robile_navigation)/launch/navigation.launch">
+        <arg name="map_file" value="$(find floorplan-dsl-environments)/maps/brsu_building_c/brsu_building_c.yaml"/>
+    </include>
+
+
+    <!-- <include file="$(find navi_goals)/launch/navi_goals.launch">
+        <arg name="nav_goals_file" value="$(find floorplan-dsl-environments)/tasks/brsu_building_c/classroom_c018_task.yaml"/> 
+    </include> -->
+
+</launch>
+
