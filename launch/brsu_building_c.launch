@@ -1,5 +1,5 @@
 <launch>
-  <arg name="gui" default="false"/>
+  <arg name="gui" default="true"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(find floorplan-dsl-environments)/worlds/brsu_building_c.world"/>
