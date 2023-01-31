@@ -1,13 +1,44 @@
-<launch>
-  <arg name="gui" default="true"/>
+<?xml version="1.0"?>
 
-  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+<launch>
+    <!-- platform_configuration options -->
+    <arg name="platform_config"/> <!-- (must be defined in the 'robile_description' ros package) -->
+    <arg name="use_kelo_tulip" default="true"/>
+    <arg name="hub_wheel_controller_list"/>
+    <arg name="platform_max_lin_vel" default="1.0"/> <!-- in m/s -->
+    <arg name="platform_max_ang_vel" default="1.0"/> <!-- in rad/s -->
+    <arg name="robot_name_1" default="robile_john"/>
+
+    <!-- ROBOT SPAWN POSE -->
+    <arg name="init_pos_x" default="0.0"/>
+    <arg name="init_pos_y" default="0.0"/>
+    <arg name="init_pos_z" default="0.0"/>
+    <arg name="init_yaw" default="0.0"/>
     <arg name="world_name" value="$(find floorplan-dsl-environments)/worlds/brsu_building_c.world"/>
-    <arg name="paused" default="false"/>
+
+    <!-- GAZEBO SETUP ARGUMENTS -->
     <arg name="use_sim_time" default="true"/>
-    <arg name="gui" default="$(arg gui)"/>
-    <arg name="headless" default="false"/>
+    <arg name="gazebo_gui" default="false"/>
+    <arg name="headless" default="true"/>
     <arg name="debug" default="false"/>
-    <arg name="verbose" default="true"/>
-  </include>
+    <arg name="paused" default="false"/>
+
+    <!-- RViz startup options -->
+    <arg name="start_rviz" default="true"/>
+    <arg name="rviz_config" default="$(find robile_gazebo)/config/rviz/robile.rviz"/>
+
+    <!-- launch gazebo with empty world -->
+    <include file="$(find robile_gazebo)/launch/platform_independent/world.launch">
+        <arg name="world_name" value="$(find floorplan-dsl-environments)/worlds/brsu_building_c.world"/>
+        <arg name="paused" value="$(arg paused)"/>
+        <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+        <arg name="gui" value="$(arg gazebo_gui)"/>
+        <arg name="headless" value="$(arg headless)"/>
+        <arg name="debug" value="$(arg debug)"/>
+    </include>
+
+    <include file="$(find robile_gazebo)/launch/($arg platform_config).launch">
+    </include>
+
+
 </launch>
