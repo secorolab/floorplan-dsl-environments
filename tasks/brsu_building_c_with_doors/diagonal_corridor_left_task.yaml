@@ -1,0 +1,8 @@
+task:
+  name: diagonal_corridor_left
+  type: waypoint_following
+  waypoints:
+  - [1.47, 48.05, 0]
+  - [8.21, 45.33, 0]
+  - [6.68, 43.14, 0]
+  - [0.49, 45.64, 0]

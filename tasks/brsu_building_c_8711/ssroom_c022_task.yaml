@@ -1,0 +1,8 @@
+task:
+  name: ssroom_c022
+  type: waypoint_following
+  waypoints:
+  - [45.51, 36.05, 0]
+  - [40.6, 39.49, 0]
+  - [44.04, 44.4, 0]
+  - [48.95, 40.96, 0]

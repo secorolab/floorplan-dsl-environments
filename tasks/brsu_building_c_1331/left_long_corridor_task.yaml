@@ -1,0 +1,8 @@
+task:
+  name: left_long_corridor
+  type: waypoint_following
+  waypoints:
+  - [21.55, 60.02, 0]
+  - [-12.17, 11.86, 0]
+  - [-12.96, 12.41, 0]
+  - [20.77, 60.57, 0]

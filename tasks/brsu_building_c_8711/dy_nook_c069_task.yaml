@@ -1,0 +1,8 @@
+task:
+  name: dy_nook_c069
+  type: waypoint_following
+  waypoints:
+  - [9.55, 49.87, 0]
+  - [7.77, 47.32, 0]
+  - [5.27, 48.28, 0]
+  - [7.42, 51.36, 0]

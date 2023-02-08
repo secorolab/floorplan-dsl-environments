@@ -1,0 +1,8 @@
+task:
+  name: gonal_corridor_center
+  type: waypoint_following
+  waypoints:
+  - [20.12, 40.13, 0]
+  - [35.7, 33.83, 0]
+  - [35.17, 32.53, 0]
+  - [19.6, 38.83, 0]

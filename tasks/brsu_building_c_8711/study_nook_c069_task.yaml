@@ -1,0 +1,8 @@
+task:
+  name: study_nook_c069
+  type: waypoint_following
+  waypoints:
+  - [9.41, 49.85, 0]
+  - [7.73, 47.44, 0]
+  - [5.42, 48.33, 0]
+  - [7.45, 51.22, 0]

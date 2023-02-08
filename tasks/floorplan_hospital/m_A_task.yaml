@@ -1,0 +1,8 @@
+task:
+  name: m_A
+  type: waypoint_following
+  waypoints:
+  - [0.36, 12.62, 0]
+  - [2.62, 10.35, 0]
+  - [0.86, 8.59, 0]
+  - [-1.41, 10.85, 0]
