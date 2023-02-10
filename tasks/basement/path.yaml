@@ -1,0 +1,6 @@
+task:
+  name: path
+  type: waypoint_following
+  waypoints:
+  - [0, 0, 0]
+  - [0, 125, 0]

@@ -7,7 +7,7 @@
     </include>
 
     <include file="$(find robile_gazebo)/launch/4_wheel_platform.launch">
-        <arg name="use_kelo_tulip" value="true"/>
+        <arg name="use_kelo_tulip" value="false"/>
     </include>
 
     <include file="$(find robile_navigation)/launch/navigation.launch">
