@@ -1,6 +1,7 @@
 <launch>
     <arg name="gui" default="false"/>
-    <arg name="environment_name" default="brsu_building_c"/>
+    <arg name="environment_name" default="cart_basement"/>
+    <arg name="map_name" default="cart_basement" />
 
     <include file="$(find floorplan-dsl-environments)/launch/$(arg environment_name).launch">
         <arg name="gazebo_gui" default="$(arg gui)"/>
@@ -11,7 +12,7 @@
     </include>
 
     <include file="$(find robile_navigation)/launch/navigation.launch">
-        <arg name="map_file" value="$(find floorplan-dsl-environments)/maps/$(arg environment_name)/$(arg environment_name).yaml"/>
+        <arg name="map_file" value="$(find floorplan-dsl-environments)/maps/$(arg map_name)/$(arg map_name).yaml"/>
     </include>
 
 

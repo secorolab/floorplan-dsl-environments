@@ -1,5 +1,5 @@
 free_thresh: 0.196
-image: basement.pgm
+image: cart_basement_6551.pgm
 negate: 0
 occupied_thresh: 0.65
 origin:

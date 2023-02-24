@@ -3,4 +3,4 @@ task:
   type: waypoint_following
   waypoints:
   - [0, 0, 0]
-  - [-88.0, 88.0, 0]
+  - [-125.0, 0, 0]

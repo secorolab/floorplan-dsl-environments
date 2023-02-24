@@ -1,0 +1,8 @@
+task:
+  name: end
+  type: waypoint_following
+  waypoints:
+  - [-123.8, -4.5, 0]
+  - [-127.8, -4.5, 0]
+  - [-127.8, 4.5, 0]
+  - [-123.8, 4.5, 0]
