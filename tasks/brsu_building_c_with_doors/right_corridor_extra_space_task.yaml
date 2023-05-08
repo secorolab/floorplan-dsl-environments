@@ -1,8 +1,8 @@
 task:
-  name: right_corridor_extra_space
+- name: right_corridor_extra_space
   type: waypoint_following
   waypoints:
-  - [52.32, 38.54, 0]
-  - [47.09, 31.07, 0]
-  - [46.95, 31.13, 0]
-  - [52.2, 38.62, 0]
+  - {x: 52.47, y: 38.74, yaw: 0, z: 0}
+  - {x: 47.64, y: 31.85, yaw: 0, z: 0}
+  - {x: 47.49, y: 31.91, yaw: 0, z: 0}
+  - {x: 52.34, y: 38.83, yaw: 0, z: 0}

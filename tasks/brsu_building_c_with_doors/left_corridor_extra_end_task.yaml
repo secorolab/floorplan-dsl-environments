@@ -1,8 +1,8 @@
 task:
-  name: left_corridor_extra_end
+- name: left_corridor_extra_end
   type: waypoint_following
   waypoints:
-  - [19.6, 61.51, 0]
-  - [11.57, 50.04, 0]
-  - [11.47, 50.11, 0]
-  - [19.5, 61.58, 0]
+  - {x: 19.6, y: 61.51, yaw: 0, z: 0}
+  - {x: 11.57, y: 50.04, yaw: 0, z: 0}
+  - {x: 11.47, y: 50.11, yaw: 0, z: 0}
+  - {x: 19.5, y: 61.58, yaw: 0, z: 0}

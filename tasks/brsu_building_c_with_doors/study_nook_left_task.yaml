@@ -1,8 +1,8 @@
 task:
-  name: study_nook_left
+- name: study_nook_left
   type: waypoint_following
   waypoints:
-  - [-15.97, 6.39, 0]
-  - [-19.42, 1.47, 0]
-  - [-20.24, 2.05, 0]
-  - [-16.79, 6.96, 0]
+  - {x: -15.97, y: 6.39, yaw: 0, z: 0}
+  - {x: -19.42, y: 1.47, yaw: 0, z: 0}
+  - {x: -20.24, y: 2.05, yaw: 0, z: 0}
+  - {x: -16.79, y: 6.96, yaw: 0, z: 0}

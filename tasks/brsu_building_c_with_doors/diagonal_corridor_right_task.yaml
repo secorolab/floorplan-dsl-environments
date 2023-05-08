@@ -1,8 +1,8 @@
 task:
-  name: diagonal_corridor_right
+- name: diagonal_corridor_right
   type: waypoint_following
   waypoints:
-  - [46.27, 30.07, 0]
-  - [51.74, 27.85, 0]
-  - [50.77, 25.44, 0]
-  - [44.74, 27.88, 0]
+  - {x: 46.75, y: 30.76, yaw: 0, z: 0}
+  - {x: 52.31, y: 28.73, yaw: 0, z: 0}
+  - {x: 51.54, y: 26.61, yaw: 0, z: 0}
+  - {x: 45.42, y: 28.85, yaw: 0, z: 0}

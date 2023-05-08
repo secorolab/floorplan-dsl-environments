@@ -1,8 +1,8 @@
 task:
-  name: right_long_corridor
+- name: right_long_corridor
   type: waypoint_following
   waypoints:
-  - [51.12, 39.44, 0]
-  - [17.28, -8.89, 0]
-  - [16.26, -8.17, 0]
-  - [50.1, 40.16, 0]
+  - {x: 51.12, y: 39.44, yaw: 0, z: 0}
+  - {x: 17.28, y: -8.89, yaw: 0, z: 0}
+  - {x: 16.26, y: -8.17, yaw: 0, z: 0}
+  - {x: 50.1, y: 40.16, yaw: 0, z: 0}
