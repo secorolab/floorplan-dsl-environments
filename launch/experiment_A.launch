@@ -1,4 +1,7 @@
 <launch>
+
+    <remap from="/robile_john/scan_front" to="/scan_front" />
+
     <arg name="gui" default="false"/>
     <arg name="environment_name" default="brsu_building_c"/>
 
@@ -14,7 +17,7 @@
         <arg name="map_file" value="$(find floorplan-dsl-environments)/maps/$(arg environment_name)/$(arg environment_name).yaml"/>
     </include>
 
-
+    <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 0 0 0 1 map odom 100" />
     <!-- <include file="$(find navi_goals)/launch/navi_goals.launch">
         <arg name="nav_goals_file" value="$(find floorplan-dsl-environments)/tasks/brsu_building_c/classroom_c018_task.yaml"/> 
     </include> -->
