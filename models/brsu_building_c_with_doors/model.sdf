@@ -5,14 +5,14 @@
       <visual name="visual">
 	    <geometry>
           <mesh>
-            <uri>model://brsu_building_c_with_doors/meshes/brsu_building_c_with_doors.stl</uri>
+            <uri>model://brsu_building_c_with_doors/meshes/brsu_building_c_with_doors.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://brsu_building_c_with_doors/meshes/brsu_building_c_with_doors.stl</uri>
+            <uri>model://brsu_building_c_with_doors/meshes/brsu_building_c_with_doors.dae</uri>
           </mesh>
         </geometry>
       </collision>    
