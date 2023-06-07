@@ -1,0 +1,9 @@
+free_thresh: 0.196
+image: brsu_building_c_angle.pgm
+negate: 0
+occupied_thresh: 0.65
+origin:
+- -25.234053500482176
+- -18.294909323324806
+- 0
+resolution: 0.05

@@ -2,7 +2,7 @@ task:
 - name: study_nook_c069
   type: waypoint_following
   waypoints:
-  - {x: 10.83, y: 48.98, yaw: 0, z: 0}
-  - {x: 9.04, y: 46.43, yaw: 0, z: 0}
-  - {x: 6.54, y: 47.39, yaw: 0, z: 0}
-  - {x: 8.7, y: 50.47, yaw: 0, z: 0}
+  - {name: study_nook_c069-point-0, x: 10.83, y: 48.98, yaw: 0, z: 0}
+  - {name: study_nook_c069-point-1, x: 9.04, y: 46.43, yaw: 0, z: 0}
+  - {name: study_nook_c069-point-2, x: 6.54, y: 47.39, yaw: 0, z: 0}
+  - {name: study_nook_c069-point-3, x: 8.7, y: 50.47, yaw: 0, z: 0}

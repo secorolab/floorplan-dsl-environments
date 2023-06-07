@@ -1,0 +1,8 @@
+task:
+- name: left_corridor_extra_end
+  type: waypoint_following
+  waypoints:
+  - {name: point-0-to-left_corridor_extra_end, x: 19.6, y: 61.51, yaw: 0, z: 0}
+  - {name: point-1-to-left_corridor_extra_end, x: 11.57, y: 50.04, yaw: 0, z: 0}
+  - {name: point-2-to-left_corridor_extra_end, x: 11.47, y: 50.11, yaw: 0, z: 0}
+  - {name: point-3-to-left_corridor_extra_end, x: 19.5, y: 61.58, yaw: 0, z: 0}

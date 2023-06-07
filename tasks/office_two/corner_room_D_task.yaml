@@ -1,0 +1,8 @@
+task:
+  name: corner_room_D
+  type: waypoint_following
+  waypoints:
+  - [13.8, 1.5, 0]
+  - [13.8, -2.5, 0]
+  - [9.8, -2.5, 0]
+  - [9.8, 1.5, 0]

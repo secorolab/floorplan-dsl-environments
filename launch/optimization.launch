@@ -1,0 +1,32 @@
+<launch>
+
+    <remap from="/robile_john/scan_front" to="/scan_front" />
+
+    <arg name="gui" default="false"/>
+    <arg name="record_bag" default="true"/>
+
+    <arg name="environment_name" default="office"/>
+
+    <include file="$(find floorplan-dsl-environments)/launch/$(arg environment_name).launch">
+        <arg name="gazebo_gui" default="$(arg gui)"/>
+    </include>
+
+    <include file="$(find robile_gazebo)/launch/4_wheel_platform.launch">
+        <arg name="use_kelo_tulip" value="false"/>
+    </include>
+
+    <include file="$(find robile_navigation)/launch/navigation.launch">
+        <arg name="map_file" value="$(find floorplan-dsl-environments)/maps/$(arg environment_name)/$(arg environment_name).yaml"/>
+    </include>
+
+    <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 0 0 0 1 map odom 100" />
+
+    <node pkg="navi_goals" type="ground_truth.py" name="ground_truth_python" />
+    <node pkg="navi_goals" type="new_tf.py" name="new_tf_publisher" />
+
+    <node pkg="rosbag" type="record" name="rosbag_for_optimization" args="record -o optimization /cmd_vel /odom /rosout /rosout_agg /tf /scan_front /vrpn_client_node/base_link_gt/pose /tf_static /amcl_pose" />
+    <!-- <include file="$(find navi_goals)/launch/navi_goals.launch">
+        <arg name="nav_goals_file" value="$(find floorplan-dsl-environments)/tasks/brsu_building_c/classroom_c018_task.yaml"/> 
+    </include> -->
+
+</launch>

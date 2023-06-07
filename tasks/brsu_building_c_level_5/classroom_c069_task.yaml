@@ -1,0 +1,12 @@
+task:
+- name: classroom_c069
+  type: waypoint_following
+  waypoints:
+  - {name: position-inset-point-0-to-classroom_c069-frame, x: 18.4, y: 62.35, yaw: 0,
+    z: 0}
+  - {name: position-inset-point-1-to-classroom_c069-frame, x: 10.37, y: 50.89, yaw: 0,
+    z: 0}
+  - {name: position-inset-point-2-to-classroom_c069-frame, x: 5.45, y: 54.33, yaw: 0,
+    z: 0}
+  - {name: position-inset-point-3-to-classroom_c069-frame, x: 13.48, y: 65.8, yaw: 0,
+    z: 0}

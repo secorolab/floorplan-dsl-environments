@@ -1,0 +1,20 @@
+<launch>
+
+    <remap from="/robile_john/scan_front" to="/scan_front" />
+
+    <arg name="gui" default="false"/>
+    <arg name="environment_name" default="office"/>
+    <arg name="bag_file" default="none" />
+    
+    <include file="$(find mbot_autom_tuning_amcl)/ros/launch/amcl_instance_server.launch" >
+        <arg name="environment_name" value="$(arg environment_name)"/>
+    </include>
+
+    <!-- <node pkg="mbot_autom_param_tuning_tools" type="smac_wrapper_node" name="smac_wrapper_node" args="amcl no_instance"/> -->
+
+    <!--amcl_instance_server.launch-->
+
+    <!-- rosrun mbot_autom_param_tuning_tools smac_wrapper_node amcl no_instance -->
+
+</launch>
+

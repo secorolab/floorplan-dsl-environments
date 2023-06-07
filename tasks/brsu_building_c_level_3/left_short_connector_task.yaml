@@ -1,0 +1,8 @@
+task:
+  name: left_short_connector
+  type: waypoint_following
+  waypoints:
+  - [-20.7, 16.0, 0]
+  - [-7.28, 6.6, 0]
+  - [-9.44, 3.52, 0]
+  - [-22.86, 12.92, 0]

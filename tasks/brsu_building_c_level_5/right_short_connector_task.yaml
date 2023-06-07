@@ -1,0 +1,12 @@
+task:
+- name: right_short_connector
+  type: waypoint_following
+  waypoints:
+  - {name: position-inset-point-0-to-right_short_connector-frame, x: 8.69, y: -4.58,
+    yaw: 0, z: 0}
+  - {name: position-inset-point-1-to-right_short_connector-frame, x: 22.11, y: -13.98,
+    yaw: 0, z: 0}
+  - {name: position-inset-point-2-to-right_short_connector-frame, x: 19.95, y: -17.06,
+    yaw: 0, z: 0}
+  - {name: position-inset-point-3-to-right_short_connector-frame, x: 6.54, y: -7.66,
+    yaw: 0, z: 0}

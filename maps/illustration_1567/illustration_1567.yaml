@@ -1,0 +1,9 @@
+free_thresh: 0.196
+image: illustration_1567.pgm
+negate: 0
+occupied_thresh: 0.65
+origin:
+- -9.523149339882607
+- -12.648561312727146
+- 0
+resolution: 0.05

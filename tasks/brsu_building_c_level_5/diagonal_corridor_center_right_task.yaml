@@ -1,0 +1,12 @@
+task:
+- name: diagonal_corridor_center_right
+  type: waypoint_following
+  waypoints:
+  - {name: position-inset-point-0-to-diagonal_corridor_center_right-frame, x: 12.12,
+    y: 43.85, yaw: 0, z: 0}
+  - {name: position-inset-point-1-to-diagonal_corridor_center_right-frame, x: 17.59,
+    y: 41.64, yaw: 0, z: 0}
+  - {name: position-inset-point-2-to-diagonal_corridor_center_right-frame, x: 16.61,
+    y: 39.22, yaw: 0, z: 0}
+  - {name: position-inset-point-3-to-diagonal_corridor_center_right-frame, x: 10.59,
+    y: 41.66, yaw: 0, z: 0}

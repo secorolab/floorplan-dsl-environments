@@ -1,0 +1,12 @@
+task:
+- name: diagonal_corridor_center_right
+  type: waypoint_following
+  waypoints:
+  - {name: point-0-to-diagonal_corridor_center_right, x: 11.85, y: 43.47, yaw: 0,
+    z: 0}
+  - {name: point-1-to-diagonal_corridor_center_right, x: 17.41, y: 41.44, yaw: 0,
+    z: 0}
+  - {name: point-2-to-diagonal_corridor_center_right, x: 16.64, y: 39.33, yaw: 0,
+    z: 0}
+  - {name: point-3-to-diagonal_corridor_center_right, x: 10.52, y: 41.57, yaw: 0,
+    z: 0}

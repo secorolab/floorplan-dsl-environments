@@ -1,0 +1,9 @@
+free_thresh: 0.196
+image: hospital.pgm
+negate: 0
+occupied_thresh: 0.65
+origin:
+- -7.145760441073592
+- -3.321067811865476
+- 0
+resolution: 0.05

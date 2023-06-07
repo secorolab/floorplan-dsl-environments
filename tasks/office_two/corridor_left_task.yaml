@@ -1,0 +1,8 @@
+task:
+  name: corridor_left
+  type: waypoint_following
+  waypoints:
+  - [-2.4, 11.5, 0]
+  - [-2.4, -7.5, 0]
+  - [-4.4, -7.5, 0]
+  - [-4.4, 11.5, 0]

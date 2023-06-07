@@ -1,5 +1,5 @@
 free_thresh: 0.196
-image: brsu_building_c_with_doors.pgm
+image: brsu_building_c_with_doors.png
 negate: 0
 occupied_thresh: 0.65
 origin:

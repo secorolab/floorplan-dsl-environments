@@ -1,0 +1,8 @@
+task:
+  name: stairway_room_exit
+  type: waypoint_following
+  waypoints:
+  - [3.09, -9.79, 0]
+  - [1.2, -12.5, 0]
+  - [-0.69, -11.18, 0]
+  - [1.21, -8.48, 0]

@@ -1,0 +1,9 @@
+free_thresh: 0.196
+image: illustration_2077.pgm
+negate: 0
+occupied_thresh: 0.65
+origin:
+- -4.1000000000000005
+- -10.1
+- 0
+resolution: 0.05

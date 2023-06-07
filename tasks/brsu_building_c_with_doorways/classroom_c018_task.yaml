@@ -1,0 +1,8 @@
+task:
+- name: classroom_c018
+  type: waypoint_following
+  waypoints:
+  - {name: point-0-to-classroom_c018, x: 45.17, y: 28.5, yaw: 0, z: 0}
+  - {name: point-1-to-classroom_c018, x: 51.78, y: 26.09, yaw: 0, z: 0}
+  - {name: point-2-to-classroom_c018, x: 42.46, y: 12.78, yaw: 0, z: 0}
+  - {name: point-3-to-classroom_c018, x: 36.89, y: 16.68, yaw: 0, z: 0}

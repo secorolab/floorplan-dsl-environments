@@ -1,0 +1,12 @@
+<launch>
+    <arg name="environment_name" default="brsu_building_c_level_5"/>
+    <arg name="path" default="/home/samuel/Documents/SESAME/MODELS/rosbag_files/experiment/playback/" />
+    <arg name="file_1" default="my_bag_no_amcl.bag" />
+
+    <include file="$(find robile_navigation)/launch/navigation.launch">
+        <arg name="map_file" value="$(find floorplan-dsl-environments)/maps/$(arg environment_name)/$(arg environment_name).yaml"/>
+    </include>
+
+    <node pkg="rosbag" type="record" name="playback" args="record -o playback -a" />
+    <node pkg="rosbag" type="play" name="player" output="screen" args="--clock $(arg path)$(arg file_1)"/>
+</launch>

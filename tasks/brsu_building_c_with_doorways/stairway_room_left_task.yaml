@@ -1,0 +1,8 @@
+task:
+- name: stairway_room_left
+  type: waypoint_following
+  waypoints:
+  - {name: point-0-to-stairway_room_left, x: 0.1, y: -7.7, yaw: 0, z: 0}
+  - {name: point-1-to-stairway_room_left, x: -1.79, y: -10.4, yaw: 0, z: 0}
+  - {name: point-2-to-stairway_room_left, x: -9.16, y: -5.24, yaw: 0, z: 0}
+  - {name: point-3-to-stairway_room_left, x: -7.27, y: -2.54, yaw: 0, z: 0}

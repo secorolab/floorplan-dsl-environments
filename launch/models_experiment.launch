@@ -1,0 +1,29 @@
+<launch>
+
+    <remap from="/robile_john/scan_front" to="/scan_front" />
+
+    <arg name="gui" default="false"/>
+    <arg name="environment_name" default="brsu_building_c"/>
+
+    <include file="$(find floorplan-dsl-environments)/launch/$(arg environment_name).launch">
+        <arg name="gazebo_gui" default="$(arg gui)"/>
+    </include>
+
+    <include file="$(find robile_gazebo)/launch/4_wheel_platform.launch">
+        <arg name="use_kelo_tulip" value="false"/>
+    </include>
+
+    <include file="$(find robile_navigation)/launch/navigation.launch">
+        <arg name="map_file" value="$(find floorplan-dsl-environments)/maps/$(arg environment_name)/$(arg environment_name).yaml"/>
+    </include>
+
+    <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 0 0 0 1 map odom 100" />
+    
+    <node pkg="rosbag" type="record" name="$(arg environment_name)" args="record -o $(arg environment_name) " />
+    
+    <!-- <include file="$(find navi_goals)/launch/navi_goals.launch">
+        <arg name="nav_goals_file" value="$(find floorplan-dsl-environments)/tasks/brsu_building_c/left_long_corridor_task.yaml"/> 
+    </include> -->
+
+</launch>
+

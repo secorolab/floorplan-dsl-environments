@@ -1,0 +1,12 @@
+task:
+- name: study_nook_left
+  type: waypoint_following
+  waypoints:
+  - {name: position-inset-point-0-to-study_nook_left-frame, x: -15.97, y: 6.39, yaw: 0,
+    z: 0}
+  - {name: position-inset-point-1-to-study_nook_left-frame, x: -19.42, y: 1.47, yaw: 0,
+    z: 0}
+  - {name: position-inset-point-2-to-study_nook_left-frame, x: -20.24, y: 2.05, yaw: 0,
+    z: 0}
+  - {name: position-inset-point-3-to-study_nook_left-frame, x: -16.79, y: 6.96, yaw: 0,
+    z: 0}

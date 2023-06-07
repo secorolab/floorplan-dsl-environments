@@ -1,0 +1,12 @@
+task:
+- name: stairway_room_left
+  type: waypoint_following
+  waypoints:
+  - {name: position-inset-point-0-to-stairway_room_left-frame, x: 0.1, y: -7.7, yaw: 0,
+    z: 0}
+  - {name: position-inset-point-1-to-stairway_room_left-frame, x: -1.79, y: -10.4,
+    yaw: 0, z: 0}
+  - {name: position-inset-point-2-to-stairway_room_left-frame, x: -9.16, y: -5.24,
+    yaw: 0, z: 0}
+  - {name: position-inset-point-3-to-stairway_room_left-frame, x: -7.27, y: -2.54,
+    yaw: 0, z: 0}
