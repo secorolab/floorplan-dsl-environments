@@ -2,7 +2,7 @@ task:
 - name: stairway_room_exit
   type: waypoint_following
   waypoints:
-  - {name: stairway_room_exit-point-0, x: 3.09, y: -9.79, yaw: 0, z: 0}
-  - {name: stairway_room_exit-point-1, x: 1.2, y: -12.5, yaw: 0, z: 0}
-  - {name: stairway_room_exit-point-2, x: -0.69, y: -11.18, yaw: 0, z: 0}
-  - {name: stairway_room_exit-point-3, x: 1.21, y: -8.48, yaw: 0, z: 0}
+  - {id: stairway_room_exit-point-0, x: 3.09, y: -9.79, yaw: 0, z: 0}
+  - {id: stairway_room_exit-point-1, x: 1.2, y: -12.5, yaw: 0, z: 0}
+  - {id: stairway_room_exit-point-2, x: -0.69, y: -11.18, yaw: 0, z: 0}
+  - {id: stairway_room_exit-point-3, x: 1.21, y: -8.48, yaw: 0, z: 0}

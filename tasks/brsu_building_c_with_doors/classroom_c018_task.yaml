@@ -2,7 +2,7 @@ task:
 - name: classroom_c018
   type: waypoint_following
   waypoints:
-  - {name: classroom_c018-point-0, x: 45.17, y: 28.5, yaw: 0, z: 0}
-  - {name: classroom_c018-point-1, x: 51.78, y: 26.09, yaw: 0, z: 0}
-  - {name: classroom_c018-point-2, x: 42.46, y: 12.78, yaw: 0, z: 0}
-  - {name: classroom_c018-point-3, x: 36.89, y: 16.68, yaw: 0, z: 0}
+  - {id: classroom_c018-point-0, x: 45.17, y: 28.5, yaw: 0, z: 0}
+  - {id: classroom_c018-point-1, x: 51.78, y: 26.09, yaw: 0, z: 0}
+  - {id: classroom_c018-point-2, x: 42.46, y: 12.78, yaw: 0, z: 0}
+  - {id: classroom_c018-point-3, x: 36.89, y: 16.68, yaw: 0, z: 0}

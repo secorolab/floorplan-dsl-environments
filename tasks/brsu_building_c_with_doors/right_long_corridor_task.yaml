@@ -2,7 +2,7 @@ task:
 - name: right_long_corridor
   type: waypoint_following
   waypoints:
-  - {name: right_long_corridor-point-0, x: 51.12, y: 39.44, yaw: 0, z: 0}
-  - {name: right_long_corridor-point-1, x: 17.28, y: -8.89, yaw: 0, z: 0}
-  - {name: right_long_corridor-point-2, x: 16.26, y: -8.17, yaw: 0, z: 0}
-  - {name: right_long_corridor-point-3, x: 50.1, y: 40.16, yaw: 0, z: 0}
+  - {id: right_long_corridor-point-0, x: 51.12, y: 39.44, yaw: 0, z: 0}
+  - {id: right_long_corridor-point-1, x: 17.28, y: -8.89, yaw: 0, z: 0}
+  - {id: right_long_corridor-point-2, x: 16.26, y: -8.17, yaw: 0, z: 0}
+  - {id: right_long_corridor-point-3, x: 50.1, y: 40.16, yaw: 0, z: 0}
