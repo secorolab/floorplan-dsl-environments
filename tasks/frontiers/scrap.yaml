@@ -1,0 +1,68 @@
+  - waypoints:
+    # C025
+    - id: classroom_c025-w001
+      x: 44.80387496948242
+      y: 37.15502166748047
+      yaw: 0.925
+    # C018
+    - id: classroom_c018-w001
+      x: 48.26420974731445
+      y: 24.618297576904297
+      z: 0.0
+      yaw: -0.641 
+
+  start_pose: # C025
+    id: classroom_c025-w001
+      x: 44.80387496948242
+      y: 37.15502166748047
+      z: 0.0
+      roll: 0.0
+      pitch: 0.0
+      yaw: 0.0
+
+    - name: classroom_c022
+  type: waypoint_following
+  waypoints:
+  - {id: position-inset-point-0-to-classroom_c022-frame, x: 45.51, y: 36.05, yaw: 0,
+    z: 0}
+  - {id: position-inset-point-1-to-classroom_c022-frame, x: 40.6, y: 39.49, yaw: 0,
+    z: 0}
+  - {id: position-inset-point-2-to-classroom_c022-frame, x: 44.04, y: 44.4, yaw: 0,
+    z: 0}
+  - {id: position-inset-point-3-to-classroom_c022-frame, x: 48.95, y: 40.96, yaw: 0,
+    z: 0}
+
+  - name: classroom_c025
+  type: waypoint_following
+  waypoints:
+  - {id: position-inset-point-0-to-classroom_c025-frame, x: 53.43, y: 37.76, yaw: 0,
+    z: 0}
+  - {id: position-inset-point-1-to-classroom_c025-frame, x: 58.34, y: 34.32, yaw: 0,
+    z: 0}
+  - {id: position-inset-point-2-to-classroom_c025-frame, x: 54.9, y: 29.41, yaw: 0,
+    z: 0}
+  - {id: position-inset-point-3-to-classroom_c025-frame, x: 49.99, y: 32.85, yaw: 0,
+    z: 0}
+
+    waypoints:
+    name: classroom_c069
+  - {id: position-inset-point-0-to-classroom_c069-frame, x: 18.4, y: 62.35, yaw: 0,
+    z: 0}
+  - {id: position-inset-point-1-to-classroom_c069-frame, x: 10.37, y: 50.89, yaw: 0,
+    z: 0}
+  - {id: position-inset-point-2-to-classroom_c069-frame, x: 5.45, y: 54.33, yaw: 0,
+    z: 0}
+  - {id: position-inset-point-3-to-classroom_c069-frame, x: 13.48, y: 65.8, yaw: 0,
+    z: 0}
+
+  - name: classroom_c018
+  type: waypoint_following
+  waypoints:
+  - {id: position-inset-point-0-to-classroom_c018-frame, x: 44.5, y: 27.54, yaw: 0,
+    z: 0}
+  - {id: position-inset-point-1-to-classroom_c018-frame, x: 50.97, y: 24.92, yaw: 0,
+    z: 0}
+  - {id: position-inset-point-2-to-classroom_c018-frame, x: 43.13, y: 13.73, yaw: 0,
+    z: 0}
+  - {id: position-inset-point-3-to-classroom_c018-frame, x: 37.56, y: 17.63, yaw: 0,
+    z: 0}

@@ -1,0 +1,8 @@
+task:
+- name: classroom_c018
+  type: waypoint_following
+  waypoints:
+  - {id: lassroom_c018-point-0, x: 43.77, y: 28.05, yaw: 0, z: 0}
+  - {id: lassroom_c018-point-1, x: 50.24, y: 25.44, yaw: 0, z: 0}
+  - {id: lassroom_c018-point-2, x: 42.4, y: 14.24, yaw: 0, z: 0}
+  - {id: lassroom_c018-point-3, x: 36.83, y: 18.14, yaw: 0, z: 0}

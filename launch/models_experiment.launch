@@ -4,6 +4,7 @@
 
     <arg name="gui" default="false"/>
     <arg name="environment_name" default="brsu_building_c"/>
+    <arg name="map_name" default="$(arg environment_name)" />
 
     <include file="$(find floorplan-dsl-environments)/launch/$(arg environment_name).launch">
         <arg name="gazebo_gui" default="$(arg gui)"/>
@@ -14,16 +15,16 @@
     </include>
 
     <include file="$(find robile_navigation)/launch/navigation.launch">
-        <arg name="map_file" value="$(find floorplan-dsl-environments)/maps/$(arg environment_name)/$(arg environment_name).yaml"/>
+        <arg name="map_file" value="$(find floorplan-dsl-environments)/maps/$(arg map_name)/$(arg map_name).yaml"/>
     </include>
 
     <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 0 0 0 1 map odom 100" />
     
-    <node pkg="rosbag" type="record" name="$(arg environment_name)" args="record -o $(arg environment_name) " />
+    <node pkg="rosbag" type="record" name="$(arg environment_name)" args="record -a -o $(arg environment_name) "/>
     
-    <!-- <include file="$(find navi_goals)/launch/navi_goals.launch">
+    <include file="$(find navi_goals)/launch/navi_goals.launch">
         <arg name="nav_goals_file" value="$(find floorplan-dsl-environments)/tasks/brsu_building_c/left_long_corridor_task.yaml"/> 
-    </include> -->
+    </include>
 
 </launch>
 

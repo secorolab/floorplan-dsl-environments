@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <sdf version="1.6">
-  <world name="world">
+  <world name="floorplan:brsu_building_c_with_doorways_with_objects">
     <gravity>0 0 -9.8</gravity>
     <physics default="0" name="default_physics" type="ode">
       <max_step_size>0.001</max_step_size>
@@ -17,14 +17,26 @@
     </include>
     <include>
       <uri>model://ground_plane</uri>
-      <pose>0 0 0 0 -0 0</pose>
+      <pose>0 0 0 0 0 0</pose>
     </include>
-    <model name="brsu_building_c_with_doors">
-      <include>
-        <uri>model://brsu_building_c_with_doors</uri>
-        <static>true</static>
-        <pose>-0.0 0.0 0.0 0.0 0.0 0.0</pose>
-      </include>
-    </model>
+    <include>
+      <uri>model://brsu_building_c_with_doorways</uri>
+      <static>true</static>
+      <pose>-0.0 0.0 0.0 0.0 0.0 0.0</pose>
+    </include>
+    
+    <include>
+      <name>door-instance-1</name>
+      <uri>model://door</uri>
+      <static>false</static>
+      <pose>-6.456217554968435 18.71830066760649 0.0 0.0 -0.0 2.5307274153917776</pose>
+      
+        <!-- <plugin name="initial_plugin" filename="libinitial_plugin.so">
+          <joint>door:joint-door-hinge</joint>
+          <position>0.7</position>
+        </plugin>
+       -->
+    </include>
+    
   </world>
 </sdf>

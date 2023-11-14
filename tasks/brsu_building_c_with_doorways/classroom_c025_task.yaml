@@ -2,7 +2,7 @@ task:
 - name: classroom_c025
   type: waypoint_following
   waypoints:
-  - {name: point-0-to-classroom_c025, x: 53.31, y: 37.6, yaw: 0, z: 0}
-  - {name: point-1-to-classroom_c025, x: 58.23, y: 34.16, yaw: 0, z: 0}
-  - {name: point-2-to-classroom_c025, x: 54.79, y: 29.24, yaw: 0, z: 0}
-  - {name: point-3-to-classroom_c025, x: 49.87, y: 32.69, yaw: 0, z: 0}
+  - {id: lassroom_c025-point-0, x: 53.31, y: 37.6, yaw: 0, z: 0}
+  - {id: lassroom_c025-point-1, x: 58.23, y: 34.16, yaw: 0, z: 0}
+  - {id: lassroom_c025-point-2, x: 54.79, y: 29.24, yaw: 0, z: 0}
+  - {id: lassroom_c025-point-3, x: 49.87, y: 32.69, yaw: 0, z: 0}

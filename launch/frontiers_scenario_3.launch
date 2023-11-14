@@ -1,0 +1,44 @@
+<launch>
+
+    <remap from="/robile_john/scan_front" to="/scan_front" />
+
+    <arg name="gui" default="false"/>
+    <arg name="paused" default="false"/>
+    <arg name="environment_name" default="frontiers_brsu_building_c"/>
+    <arg name="frame" default="map"/>
+    <arg name="route_file" default=""/>
+    <arg name="init_pos_x" default="44.8"/>
+    <arg name="init_pos_y" default="37.15"/>
+    <arg name="init_pos_z" default="0.0"/>
+    <arg name="init_yaw" default="0.0"/>
+
+    <include file="$(find floorplan-dsl-environments)/launch/$(arg environment_name).launch">
+        <arg name="gazebo_gui" default="$(arg gui)"/>
+        <arg name="paused" default="$(arg paused)"/>
+    </include>
+
+    <include file="$(find robile_gazebo)/launch/4_wheel_platform.launch">
+        <arg name="use_kelo_tulip" value="false"/>
+        <arg name="init_pos_x" value="$(arg init_pos_x)"/>
+        <arg name="init_pos_y" value="$(arg init_pos_y)"/>
+    </include>
+
+    <include file="$(find robile_navigation)/launch/navigation.launch">
+        <arg name="map_file" value="$(find floorplan-dsl-environments)/maps/$(arg environment_name)/$(arg environment_name).yaml"/>
+        <arg name="initial_pose_x" value="$(arg init_pos_x)"/>
+        <arg name="initial_pose_y" value="$(arg init_pos_y)"/>
+    </include>
+
+    <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 0 0 0 1 map odom 100" />
+
+    <node pkg="waypoint_dispatcher" type="waypoint_server" name="waypoint_dispatcher" output="screen">
+        <param name="frame" value="$(arg frame)"/>
+    </node>
+
+    <node pkg="rosbag" type="record" name="$(arg route_file)" args="record -a -o $(arg route_file) "/>
+
+    <include file="$(find waypoint_dispatcher)/launch/waypoint_client.launch">
+        <arg name="route_file" value="$(find floorplan-dsl-environments)/tasks/frontiers/$(arg route_file).yaml"/>
+    </include>
+</launch>
+
