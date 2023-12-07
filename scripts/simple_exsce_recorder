@@ -15,7 +15,7 @@ def get_package_path(package, subfolder=""):
     return pkg_path
 
 
-def get_file_path(file_name, package="metamorphic_testing", subfolder="runs"):
+def get_file_path(file_name, package="floorplan-dsl-environments", subfolder="runs"):
     pkg_path = get_package_path(package, subfolder)
     file_path = os.path.join(pkg_path, file_name)
     return file_path

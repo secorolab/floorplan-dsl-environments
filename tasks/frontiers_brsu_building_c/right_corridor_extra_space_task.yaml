@@ -2,7 +2,7 @@ task:
 - name: right_corridor_extra_space
   type: waypoint_following
   waypoints:
-  - {id: ight_corridor_extra_space-point-0, x: 51.59, y: 39.05, yaw: 0, z: 0}
-  - {id: ight_corridor_extra_space-point-1, x: 46.37, y: 31.58, yaw: 0, z: 0}
-  - {id: ight_corridor_extra_space-point-2, x: 46.22, y: 31.64, yaw: 0, z: 0}
-  - {id: ight_corridor_extra_space-point-3, x: 51.47, y: 39.14, yaw: 0, z: 0}
+  - {id: ight_corridor_extra_space-point-0, x: 51.31, y: 39.0, yaw: 0, z: 0}
+  - {id: ight_corridor_extra_space-point-1, x: 46.29, y: 31.83, yaw: 0, z: 0}
+  - {id: ight_corridor_extra_space-point-2, x: 46.53, y: 31.74, yaw: 0, z: 0}
+  - {id: ight_corridor_extra_space-point-3, x: 51.52, y: 38.86, yaw: 0, z: 0}

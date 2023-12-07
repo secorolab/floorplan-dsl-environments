@@ -7,12 +7,14 @@
     <arg name="environment_name" default="frontiers_brsu_building_c"/>
     <arg name="frame" default="map"/>
     <arg name="route_file" default=""/>
-    <arg name="init_pos_x" default="44.8"/>
-    <arg name="init_pos_y" default="37.15"/>
+    <arg name="init_pos_x" default="44.4"/>
+    <arg name="init_pos_y" default="43.85"/>
     <arg name="init_pos_z" default="0.0"/>
     <arg name="init_yaw" default="0.0"/>
-    <arg name="scenario" default=""/>
 
+    <arg name="map_name" default="$(arg environment_name)" />
+    <arg name="rosbag_name" default="$(arg route_file)" />
+    <arg name="scenario" default=""/>
     <rosparam "scenario/id" value="$(arg scenario)"/>
     <rosparam "scenario/route" value="$(arg route_file)"/>
 
@@ -28,7 +30,7 @@
     </include>
 
     <include file="$(find robile_navigation)/launch/navigation.launch">
-        <arg name="map_file" value="$(find floorplan-dsl-environments)/maps/$(arg environment_name)/$(arg environment_name).yaml"/>
+        <arg name="map_file" value="$(find floorplan-dsl-environments)/maps/$(arg map_name)/$(arg map_name).yaml"/>
         <arg name="initial_pose_x" value="$(arg init_pos_x)"/>
         <arg name="initial_pose_y" value="$(arg init_pos_y)"/>
     </include>
@@ -39,7 +41,7 @@
         <param name="frame" value="$(arg frame)"/>
     </node>
 
-    <node pkg="rosbag" type="record" name="$(arg route_file)" args="record -a -o $(arg route_file) "/>
+    <node pkg="rosbag" type="record" name="$(arg rosbag_name)" args="record -a -o $(arg rosbag_name) "/>
 
     <include file="$(find waypoint_dispatcher)/launch/waypoint_client.launch">
         <arg name="route_file" value="$(find floorplan-dsl-environments)/tasks/frontiers/$(arg route_file).yaml"/>

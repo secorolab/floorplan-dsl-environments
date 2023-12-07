@@ -2,7 +2,7 @@ task:
 - name: diagonal_corridor_center_left
   type: waypoint_following
   waypoints:
-  - {id: iagonal_corridor_center_left-point-0, x: 35.05, y: 34.88, yaw: 0, z: 0}
-  - {id: iagonal_corridor_center_left-point-1, x: 41.86, y: 32.39, yaw: 0, z: 0}
-  - {id: iagonal_corridor_center_left-point-2, x: 40.53, y: 30.48, yaw: 0, z: 0}
-  - {id: iagonal_corridor_center_left-point-3, x: 34.28, y: 32.76, yaw: 0, z: 0}
+  - {id: iagonal_corridor_center_left-point-0, x: 35.17, y: 34.62, yaw: 0, z: 0}
+  - {id: iagonal_corridor_center_left-point-1, x: 41.55, y: 32.29, yaw: 0, z: 0}
+  - {id: iagonal_corridor_center_left-point-2, x: 40.21, y: 30.38, yaw: 0, z: 0}
+  - {id: iagonal_corridor_center_left-point-3, x: 34.4, y: 32.51, yaw: 0, z: 0}

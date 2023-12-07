@@ -2,7 +2,7 @@ task:
 - name: stairway_room_center
   type: waypoint_following
   waypoints:
-  - {id: tairway_room_center-point-0, x: 9.62, y: -0.82, yaw: 0, z: 0}
-  - {id: tairway_room_center-point-1, x: 4.06, y: -8.76, yaw: 0, z: 0}
-  - {id: tairway_room_center-point-2, x: -9.62, y: 0.82, yaw: 0, z: 0}
-  - {id: tairway_room_center-point-3, x: -4.06, y: 8.76, yaw: 0, z: 0}
+  - {id: tairway_room_center-point-0, x: 9.34, y: -0.87, yaw: 0, z: 0}
+  - {id: tairway_room_center-point-1, x: 4.01, y: -8.48, yaw: 0, z: 0}
+  - {id: tairway_room_center-point-2, x: -9.34, y: 0.87, yaw: 0, z: 0}
+  - {id: tairway_room_center-point-3, x: -4.01, y: 8.48, yaw: 0, z: 0}

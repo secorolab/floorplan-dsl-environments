@@ -2,7 +2,7 @@ task:
 - name: stairway_room_left
   type: waypoint_following
   waypoints:
-  - {id: tairway_room_left-point-0, x: 0.1, y: -7.7, yaw: 0, z: 0}
-  - {id: tairway_room_left-point-1, x: -1.79, y: -10.4, yaw: 0, z: 0}
-  - {id: tairway_room_left-point-2, x: -9.16, y: -5.24, yaw: 0, z: 0}
-  - {id: tairway_room_left-point-3, x: -7.27, y: -2.54, yaw: 0, z: 0}
+  - {id: tairway_room_left-point-0, x: -0.18, y: -7.75, yaw: 0, z: 0}
+  - {id: tairway_room_left-point-1, x: -1.84, y: -10.13, yaw: 0, z: 0}
+  - {id: tairway_room_left-point-2, x: -8.89, y: -5.19, yaw: 0, z: 0}
+  - {id: tairway_room_left-point-3, x: -7.22, y: -2.82, yaw: 0, z: 0}

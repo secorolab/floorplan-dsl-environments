@@ -7,7 +7,7 @@
     <arg name="init_pos_y" default="0.0"/>
     <arg name="init_pos_z" default="0.0"/>
     <arg name="init_yaw" default="0.0"/>
-    <arg name="world_name" value="$(find floorplan-dsl-environments)/worlds/frontiers_brsu_building_c.world"/>
+    <arg name="world_name" value="$(find floorplan-dsl-environments)/worlds/frontiers_brsu_building_c_no_adversarial.world"/>
 
     <!-- GAZEBO SETUP ARGUMENTS -->
     <arg name="use_sim_time" default="true"/>
@@ -22,7 +22,7 @@
 
     <!-- launch gazebo with empty world -->
     <include file="$(find robile_gazebo)/launch/platform_independent/world.launch">
-        <arg name="world_name" value="$(find floorplan-dsl-environments)/worlds/frontiers_brsu_building_c.world"/>
+        <arg name="world_name" value="$(find floorplan-dsl-environments)/worlds/frontiers_brsu_building_c_no_adversarial.world"/>
         <arg name="paused" value="$(arg paused)"/>
         <arg name="use_sim_time" value="$(arg use_sim_time)"/>
         <arg name="gazebo_gui" value="$(arg gazebo_gui)"/>
