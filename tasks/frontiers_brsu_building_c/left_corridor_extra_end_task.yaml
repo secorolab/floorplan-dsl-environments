@@ -2,7 +2,7 @@ task:
 - name: left_corridor_extra_end
   type: waypoint_following
   waypoints:
-  - {id: eft_corridor_extra_end-point-0, x: 19.6, y: 61.51, yaw: 0, z: 0}
-  - {id: eft_corridor_extra_end-point-1, x: 11.57, y: 50.04, yaw: 0, z: 0}
-  - {id: eft_corridor_extra_end-point-2, x: 11.47, y: 50.11, yaw: 0, z: 0}
-  - {id: eft_corridor_extra_end-point-3, x: 19.5, y: 61.58, yaw: 0, z: 0}
+  - {id: eft_corridor_extra_end-point-0, x: 19.32, y: 61.46, yaw: 0, z: 0}
+  - {id: eft_corridor_extra_end-point-1, x: 11.52, y: 50.32, yaw: 0, z: 0}
+  - {id: eft_corridor_extra_end-point-2, x: 11.75, y: 50.16, yaw: 0, z: 0}
+  - {id: eft_corridor_extra_end-point-3, x: 19.55, y: 61.3, yaw: 0, z: 0}
