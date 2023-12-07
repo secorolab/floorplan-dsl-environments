@@ -1,0 +1,102 @@
+#! /usr/bin/env python3
+import datetime
+
+import rospy
+import roslaunch
+
+from std_msgs.msg import String, Bool
+
+from exsce.utils import get_file_path, write_yaml_file 
+
+
+class ExSceRecorder:
+    def __init__(self) -> None:
+        self.run_id = rospy.get_param("run_id")
+        self.scenario_id = rospy.get_param("scenario/id")
+
+        date = datetime.datetime.today().isoformat(timespec="seconds").replace(":", "-")
+        self.date_pub = rospy.Publisher(
+            "metadata/date", String, queue_size=1, latch=True
+        )
+        self.date_pub.publish(date)
+
+        self.file_name_prefix = "{}_{}_run-{}".format(
+            date, self.scenario_id, self.run_id.split("-")[0]
+        )
+        self.artefact_pub = rospy.Publisher(
+            "metadata/artefacts", String, queue_size=1, latch=True
+        )
+        self.artefacts = list()
+
+        self.meta_pub = rospy.Publisher(
+            "metadata/run_id", String, queue_size=1, latch=True
+        )
+        self.meta_pub.publish(self.run_id)
+
+        self.scenario_id_pub = rospy.Publisher(
+            "metadata/scenario_id", String, queue_size=1, latch=True
+        )
+        self.scenario_id_pub.publish(self.scenario_id)
+
+        self.mission_done = False
+        rospy.Subscriber("scenario/test_run/finished", Bool, self.mission_done_cb)
+
+    def start(self):
+        self.get_run_params()
+        self.record_rosbag()
+
+    def mission_done_cb(self, msg):
+        self.mission_done = msg.data
+
+        if self.mission_done:
+            rospy.loginfo("Mission done")
+            self.process.stop()
+
+    def get_run_params(self):
+        params = rospy.get_param("")
+        params_file_name = "{}.rosparams".format(self.file_name_prefix)
+        file_path = get_file_path(params_file_name)
+        write_yaml_file(file_path, params)
+
+        self.artefacts.append(file_path)
+        self.artefact_pub.publish(", ".join(self.artefacts))
+
+
+    def record_rosbag(self):
+        rosbag_file_name = "{}.bag".format(self.file_name_prefix)
+        file_path = get_file_path(rosbag_file_name)
+        rospy.loginfo(rosbag_file_name)
+
+        self.artefacts.append(file_path)
+        self.artefact_pub.publish(", ".join(self.artefacts))
+
+        exclude_str = '"(.*)xtion(.*)"'
+
+        node = roslaunch.core.Node(
+            "rosbag",
+            "record",
+            name="rosbag_record",
+            args="-a -j -p -x {} -O {}".format(exclude_str, file_path),
+            output="screen",
+        )
+        launch = roslaunch.scriptapi.ROSLaunch()
+        launch.start()
+        self.process = launch.launch(node)
+
+        rospy.loginfo("Started rosbag recording")
+
+        while self.process.is_alive():
+            rospy.sleep(1)
+
+        rospy.loginfo("Shutting down!")
+
+        self.artefact_pub.publish(", ".join(self.artefacts))
+
+
+if __name__ == "__main__":
+    rospy.init_node("recorder_node")
+    recorder = ExSceRecorder()
+    try:
+        recorder.start()
+    except rospy.ROSInterruptException:
+        rospy.loginfo("Done!")

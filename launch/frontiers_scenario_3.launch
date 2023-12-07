@@ -11,6 +11,10 @@
     <arg name="init_pos_y" default="37.15"/>
     <arg name="init_pos_z" default="0.0"/>
     <arg name="init_yaw" default="0.0"/>
+    <arg name="scenario" default=""/>
+
+    <rosparam "scenario/id" value="$(arg scenario)"/>
+    <rosparam "scenario/route" value="$(arg route_file)"/>
 
     <include file="$(find floorplan-dsl-environments)/launch/$(arg environment_name).launch">
         <arg name="gazebo_gui" default="$(arg gui)"/>
