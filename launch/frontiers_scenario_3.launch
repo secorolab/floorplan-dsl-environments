@@ -29,8 +29,8 @@
     </include>
 
     <include file="$(find floorplan-dsl-environments)/launch/$(arg environment_name).launch">
-        <arg name="gazebo_gui" default="$(arg gui)"/>
-        <arg name="paused" default="$(arg paused)"/>
+        <arg name="gazebo_gui" value="$(arg gui)"/>
+        <arg name="paused" value="$(arg paused)"/>
     </include>
 
     <include file="$(find robile_gazebo)/launch/4_wheel_platform.launch">
