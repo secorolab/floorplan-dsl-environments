@@ -19,6 +19,8 @@
     <param name="scenario/id" value="$(arg scenario)"/>
     <param name="scenario/route" value="$(arg route_file)"/>
 
+    <env name="GAZEBO_MODEL_PATH" value="$(find floorplan-dsl-environments)/models:$(find floorplan-dsl-environments)/worlds:$(find floorplan-object-modelling)/output:$(optenv GAZEBO_MODEL_PATH)"/>
+
     <include file="$(find floorplan-dsl-environments)/launch/$(arg environment_name).launch">
         <arg name="gazebo_gui" default="$(arg gui)"/>
         <arg name="paused" default="$(arg paused)"/>
