@@ -2,6 +2,8 @@
 
     <remap from="/robile_john/scan_front" to="/scan_front" />
 
+    <arg name="rviz" default="false"/>
+    <arg name="rviz_config" default="$(find robile_gazebo)/config/rviz/robile.rviz"/>
     <arg name="gui" default="false"/>
     <arg name="paused" default="false"/>
     <arg name="environment_name" default="frontiers_brsu_building_c"/>
@@ -20,6 +22,11 @@
     <param name="scenario/route" value="$(arg route_file)"/>
 
     <env name="GAZEBO_MODEL_PATH" value="$(find floorplan-dsl-environments)/models:$(find floorplan-dsl-environments)/worlds:$(find floorplan-object-modelling)/output:$(optenv GAZEBO_MODEL_PATH)"/>
+
+    <include file="$(find robile_gazebo)/launch/platform_independent/rviz.launch">
+        <arg name="start_rviz" value="$(arg rviz)"/>
+        <arg name="rviz_config" value="$(arg rviz_config)"/>
+    </include>
 
     <include file="$(find floorplan-dsl-environments)/launch/$(arg environment_name).launch">
         <arg name="gazebo_gui" default="$(arg gui)"/>
