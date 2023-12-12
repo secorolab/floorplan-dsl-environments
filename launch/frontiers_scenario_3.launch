@@ -42,7 +42,7 @@
         <param name="frame" value="$(arg frame)"/>
     </node>
 
-    <node pkg="rosbag" type="record" name="$(arg rosbag_name)" args="record -a -o $(arg rosbag_name) "/>
+    <node pkg="floorplan-dsl-environments" type="simple_exsce_recorder" name="simple_exsce_recorder"/>
 
     <include file="$(find waypoint_dispatcher)/launch/waypoint_client.launch">
         <arg name="route_file" value="$(find floorplan-dsl-environments)/tasks/frontiers/$(arg route_file).yaml"/>
