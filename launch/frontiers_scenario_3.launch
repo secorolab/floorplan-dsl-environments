@@ -56,8 +56,6 @@
         <arg name="initial_pose_y" value="$(arg init_pos_y)"/>
     </include>
 
-    <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 0 0 0 1 map odom 100" />
-
     <node pkg="waypoint_dispatcher" type="waypoint_server" name="waypoint_dispatcher" output="screen">
         <param name="frame" value="$(arg frame)"/>
     </node>
