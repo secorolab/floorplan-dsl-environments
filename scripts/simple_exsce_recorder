@@ -37,6 +37,7 @@ class ExSceRecorder:
     def __init__(self) -> None:
         self.run_id = rospy.get_param("run_id")
         self.scenario_id = rospy.get_param("scenario/id")
+        self.robot_config = rospy.get_param("robots/configuration")
 
         date = datetime.datetime.today().isoformat(timespec="seconds").replace(":", "-")
         self.date_pub = rospy.Publisher(
@@ -44,8 +45,8 @@ class ExSceRecorder:
         )
         self.date_pub.publish(date)
 
-        self.file_name_prefix = "{}_{}_run-{}".format(
-            date, self.scenario_id, self.run_id.split("-")[0]
+        self.file_name_prefix = "{}_{}_conf-{}_run-{}".format(
+            date, self.scenario_id, self.robot_config, self.run_id.split("-")[0]
         )
         self.artefact_pub = rospy.Publisher(
             "metadata/artefacts", String, queue_size=1, latch=True
