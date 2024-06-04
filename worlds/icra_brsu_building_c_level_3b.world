@@ -32,7 +32,7 @@
       <pose>5.291222880221585 39.76682895871661 0.0 0.0 -0.0 2.530727415391777</pose>
       <plugin name="adversarial_joint_plugin" filename="libadversarial_joint_plugin.so">
         <joint>door:joint-door-hinge</joint>
-        <uri>/home/samuel/Documents/SESAME/dynamic-dsl/icra-models/scripts/output/keyframes_door_10.json</uri>
+        <uri>/home/argen/projects/frontiers/frontiers_ws/src/floorplan_gazebo_plugins/config/keyframes_door_10.json</uri>
       </plugin>
     </include>
     
@@ -43,7 +43,7 @@
       <pose>-3.576863844486187 22.83044392993724 0.0 0.0 -0.0 -0.6108652381980157</pose>
       <plugin name="dynamic_joint_pluginss" filename="libdynamic_joint_plugin.so">
         <joint>door:joint-door-hinge</joint>
-        <uri>/home/samuel/Documents/SESAME/dynamic-dsl/icra-models/scripts/output/keyframes_door_1.json</uri>
+        <uri>/home/argen/projects/frontiers/frontiers_ws/src/floorplan_gazebo_plugins/config/keyframes_door_1.json</uri>
       </plugin>
     </include>
     
@@ -54,7 +54,7 @@
       <pose>-1.5916943559909507 29.937004427248695 0.0 0.0 -0.0 2.530727415391777</pose>
       <plugin name="dynamic_joint_pluginss" filename="libdynamic_joint_plugin.so">
         <joint>door:joint-door-hinge</joint>
-        <uri>/home/samuel/Documents/SESAME/dynamic-dsl/icra-models/scripts/output/keyframes_door_7.json</uri>
+        <uri>/home/argen/projects/frontiers/frontiers_ws/src/floorplan_gazebo_plugins/config/keyframes_door_7.json</uri>
       </plugin>
     </include>
     
@@ -65,7 +65,7 @@
       <pose>-8.474611592203491 20.107179895780778 0.0 0.0 -0.0 2.530727415391777</pose>
       <plugin name="dynamic_joint_pluginss" filename="libdynamic_joint_plugin.so">
         <joint>door:joint-door-hinge</joint>
-        <uri>/home/samuel/Documents/SESAME/dynamic-dsl/icra-models/scripts/output/keyframes_door_9.json</uri>
+        <uri>/home/argen/projects/frontiers/frontiers_ws/src/floorplan_gazebo_plugins/config/keyframes_door_9.json</uri>
       </plugin>
     </include>
     
@@ -76,7 +76,7 @@
       <pose>1.8497642621153254 34.851916692982655 0.0 0.0 -0.0 2.530727415391777</pose>
       <plugin name="dynamic_joint_pluginss" filename="libdynamic_joint_plugin.so">
         <joint>door:joint-door-hinge</joint>
-        <uri>/home/samuel/Documents/SESAME/dynamic-dsl/icra-models/scripts/output/keyframes_door_6.json</uri>
+        <uri>/home/argen/projects/frontiers/frontiers_ws/src/floorplan_gazebo_plugins/config/keyframes_door_6.json</uri>
       </plugin>
     </include>
     
@@ -87,7 +87,7 @@
       <pose>2.7324769553753026 31.841116417116158 0.0 0.0 -0.0 -0.6108652381980157</pose>
       <plugin name="dynamic_joint_pluginss" filename="libdynamic_joint_plugin.so">
         <joint>door:joint-door-hinge</joint>
-        <uri>/home/samuel/Documents/SESAME/dynamic-dsl/icra-models/scripts/output/keyframes_door_2.json</uri>
+        <uri>/home/argen/projects/frontiers/frontiers_ws/src/floorplan_gazebo_plugins/config/keyframes_door_2.json</uri>
       </plugin>
     </include>
     
@@ -98,7 +98,7 @@
       <pose>6.747512009832617 37.57518072713912 0.0 0.0 -0.0 -0.6108652381980157</pose>
       <plugin name="dynamic_joint_pluginss" filename="libdynamic_joint_plugin.so">
         <joint>door:joint-door-hinge</joint>
-        <uri>/home/samuel/Documents/SESAME/dynamic-dsl/icra-models/scripts/output/keyframes_door_5.json</uri>
+        <uri>/home/argen/projects/frontiers/frontiers_ws/src/floorplan_gazebo_plugins/config/keyframes_door_5.json</uri>
       </plugin>
     </include>
     
@@ -109,7 +109,7 @@
       <pose>17.186603151421643 52.48374793319879 0.0 0.0 -0.0 -0.6108652381980157</pose>
       <plugin name="dynamic_joint_pluginss" filename="libdynamic_joint_plugin.so">
         <joint>door:joint-door-hinge</joint>
-        <uri>/home/samuel/Documents/SESAME/dynamic-dsl/icra-models/scripts/output/keyframes_door_3.json</uri>
+        <uri>/home/argen/projects/frontiers/frontiers_ws/src/floorplan_gazebo_plugins/config/keyframes_door_3.json</uri>
       </plugin>
     </include>
     
@@ -120,7 +120,7 @@
       <pose>-5.033152974097219 25.02209216151474 0.0 0.0 -0.0 2.530727415391777</pose>
       <plugin name="dynamic_joint_pluginss" filename="libdynamic_joint_plugin.so">
         <joint>door:joint-door-hinge</joint>
-        <uri>/home/samuel/Documents/SESAME/dynamic-dsl/icra-models/scripts/output/keyframes_door_8.json</uri>
+        <uri>/home/argen/projects/frontiers/frontiers_ws/src/floorplan_gazebo_plugins/config/keyframes_door_8.json</uri>
       </plugin>
     </include>
     
@@ -131,7 +131,7 @@
       <pose>20.628061769527907 57.398660198932745 0.0 0.0 -0.0 -0.6108652381980157</pose>
       <plugin name="dynamic_joint_pluginss" filename="libdynamic_joint_plugin.so">
         <joint>door:joint-door-hinge</joint>
-        <uri>/home/samuel/Documents/SESAME/dynamic-dsl/icra-models/scripts/output/keyframes_door_4.json</uri>
+        <uri>/home/argen/projects/frontiers/frontiers_ws/src/floorplan_gazebo_plugins/config/keyframes_door_4.json</uri>
       </plugin>
     </include>
     
@@ -142,7 +142,7 @@
       <pose>-7.018322462592461 17.91553166420328 0.0 0.0 -0.0 -0.6108652381980157</pose>
       <plugin name="dynamic_joint_pluginss" filename="libdynamic_joint_plugin.so">
         <joint>door:joint-door-hinge</joint>
-        <uri>/home/samuel/Documents/SESAME/dynamic-dsl/icra-models/scripts/output/keyframes_door_0.json</uri>
+        <uri>/home/argen/projects/frontiers/frontiers_ws/src/floorplan_gazebo_plugins/config/keyframes_door_0.json</uri>
       </plugin>
     </include>
     
